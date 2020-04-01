@@ -1,0 +1,46 @@
+body {
+    background-color: #e9ecef;
+    text-align: center;
+
+}
+
+#startBtn {
+    margin: auto;
+    margin-top: 60px;
+    width: 40%
+}
+
+#main {
+    margin-left: 0px;
+}
+
+#finalID {
+    font-size: xx-large;
+    margin-left: 15px;
+}
+
+#qzBtn {
+    background-color: darkmagenta;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#finalScore {
+    1rem 1rem 0 3rem!important;
+}
+
+#highScores {
+    margin-left: 2%;
+    cursor: pointer;
+    color: purple;
+}
+
+#time {
+    margin-left: 75%;
+}
+
+#header1 {
+    text-align: auto;
+    padding-left: 150px;
+}

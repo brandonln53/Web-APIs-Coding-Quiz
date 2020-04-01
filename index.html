@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <a id="highScores">View High Scores</a> 
+        <div class="col-md-1" id="time"></div>
+    </div>  
+    <div class="text-center">
+    <div class="col-md container" id="content">
+    <div class="jumbotron col-lg-6 col-md-10 col-sm-12">
+        
+    <div class="col-lg col-md-10 col-sm-12"> 
+        <div class="row"><h1 class="col-md-10" id="header1">Just Another Coding Quiz</h1>
+        </div>
+        <h7 id="main" class="row">
+        <p>
+            <strong>Welcome!</strong> 
+            <br><br>
+            This is a timed multiple choice quiz challenging you on your basic web development knowledge.
+            For every question you get right, you get a point.  On the other hand, if you get an answer wrong, you'll lose time!  Up to challenge? Click the button below to get started.
+        </p>
+        </h7>
+        <div class="row">
+            <button type="button" id="startBtn" class="btn btn-success">Start The Quiz</button>
+        </div>
+        <div id="choices">
+
+        </div>
+        <div class="row">
+            <!-- initials element -->
+            <input type="text" name="Initials" id="finalID" placeholder="Initials" class="col-md-2 d-none">
+            <!-- scores element -->
+        <div id="finalScore" class="input-group input-group-sm mb-3 col-md-2 d-none">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Your score:</span>
+                </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button type="button" id="storeBtn" class="btn btn-success d-none">Store Results</button>
+        </div>
+        <h2 id="countdown"></h2>
+        <div id="quizContainer"></div>
+    <div id="scoresFeedback"><button class="d-none btn btn-success" id="reStartBtn">Start Over!</button></div>
+    <div id="results"></div>
+    </div>
+    <div class="col-2">
+        
+        <div class="col-md-1" id="feedback"></div>
+    </div>  
+    </div>
+</div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
